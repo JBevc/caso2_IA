@@ -50,8 +50,14 @@ Si quieren versionar los pesos igual, usar [Git LFS](https://git-lfs.com) (`git 
 
 ## Cómo ejecutar
 
-1. Clonar el repositorio y copiar `caso2_train.zip` y `caso2_test.zip` dentro de `data/` (si faltan, el notebook
-   intenta descargarlos de la carpeta compartida de la cátedra; requiere internet).
+1. Datos. El notebook los busca en este orden y usa el primero que encuentra:
+   - `data/` junto al notebook: los zips (`caso2_train.zip`, `caso2_test.zip`) o las carpetas descomprimidas
+     (`paquete_train_alumnos/`, `paquete_test_alumnos/`). Es lo normal al correr en local.
+   - En Colab, una carpeta `caso2_IA` en *Mi unidad* de Google Drive con los mismos zips o carpetas
+     (configurable en `DRIVE_DATA_DIR`, celda 1). El notebook pide permiso para montar Drive y copia los datos.
+     Es la opción recomendada en Colab.
+   - Descarga pública de la carpeta compartida de la cátedra (último recurso; Drive a veces limita descargas de
+     archivos grandes).
 2. Abrir `caso2_deep_learning.ipynb` en Google Colab (entorno de ejecución con GPU; una T4 alcanza) o en Jupyter
    local con PyTorch y CUDA. En Colab: subir el notebook y la carpeta `data/`, o montar Drive y ajustar solo las
    dos rutas `TRAIN_ZIP` y `TEST_ZIP` de la celda **1. Configuración** (es el único lugar con rutas).
