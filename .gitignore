@@ -1,0 +1,17 @@
+# Datos de la cátedra: se distribuyen aparte (zips e imágenes, >300 MB)
+data/*
+!data/README.md
+# Pesos del modelo final (~110 MB): reconstruir con el notebook o publicar como release / Git LFS
+salidas/*.pt
+salidas/*.pth
+# Temporales de Jupyter / Python
+.ipynb_checkpoints/
+__pycache__/
+*.pyc
+# Entornos locales
+.venv/
+venv/
+.env
+# Sistema
+.DS_Store
+Thumbs.db
