@@ -1,0 +1,12 @@
+{
+  "imagenes_train": 5592,
+  "imagenes_test": 1398,
+  "razas": 35,
+  "min_por_raza": 153,
+  "max_por_raza": 160,
+  "dup_exactos_train": 45,
+  "casi_dup_pares_train": 53,
+  "test_identicas_a_train": 0,
+  "test_cercanas_a_train": 83,
+  "lado_menor_mediana_px": 334.0
+}

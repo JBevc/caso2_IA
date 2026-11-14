@@ -1,0 +1,72 @@
+{
+  "experimento": "E3",
+  "arquitectura": "convnext_tiny",
+  "pesos_preentrenados": "torchvision ConvNeXt_Tiny_Weights.IMAGENET1K_V1",
+  "torchvision": "0.29.1+cu130",
+  "torch": "2.14.1+cu130",
+  "img_size": 224,
+  "resize_eval": 256,
+  "normalizacion": {
+    "media": [
+      0.485,
+      0.456,
+      0.406
+    ],
+    "std": [
+      0.229,
+      0.224,
+      0.225
+    ]
+  },
+  "clases": [
+    "Abyssinian",
+    "Bengal",
+    "Birman",
+    "Bombay",
+    "British_Shorthair",
+    "Egyptian_Mau",
+    "Maine_Coon",
+    "Persian",
+    "Ragdoll",
+    "Russian_Blue",
+    "Sphynx",
+    "american_bulldog",
+    "american_pit_bull_terrier",
+    "basset_hound",
+    "beagle",
+    "boxer",
+    "chihuahua",
+    "english_cocker_spaniel",
+    "english_setter",
+    "german_shorthaired",
+    "great_pyrenees",
+    "havanese",
+    "japanese_chin",
+    "keeshond",
+    "leonberger",
+    "miniature_pinscher",
+    "newfoundland",
+    "pomeranian",
+    "pug",
+    "saint_bernard",
+    "samoyed",
+    "scottish_terrier",
+    "staffordshire_bull_terrier",
+    "wheaten_terrier",
+    "yorkshire_terrier"
+  ],
+  "semilla": 42,
+  "tta_espejado": true,
+  "configuracion": {
+    "experimento": "E3",
+    "arquitectura": "convnext_tiny",
+    "preparacion": "224px, norm. ImageNet, con aumentos",
+    "congelado": false,
+    "epocas_corridas": 12,
+    "mejor_epoca": 10,
+    "params_entrenables_M": 27.85,
+    "minutos": 11.0,
+    "val_exactitud": 0.9706,
+    "val_f1_macro": 0.9703
+  }
+}

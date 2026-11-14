@@ -1,0 +1,14 @@
+{
+  "regla": "sugerir si max(softmax) >= umbral; en caso contrario revisar",
+  "umbral": 0.78,
+  "objetivo_precision_sugerencias": 0.99,
+  "tta": true,
+  "validacion": {
+    "cobertura": 0.91971454058876,
+    "precision_sugerencias": 0.9903006789524733,
+    "errores_entre_sugeridas": 10,
+    "errores_derivados_a_revision": 21,
+    "n_val": 1121,
+    "ece": 0.09127935905418261
+  }
+}

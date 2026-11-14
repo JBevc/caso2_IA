@@ -1,0 +1,6 @@
+experimento,arquitectura,preparacion,congelado,epocas_corridas,mejor_epoca,params_entrenables_M,minutos,val_exactitud,val_f1_macro
+E3,convnext_tiny,"224px, norm. ImageNet, con aumentos",False,12,10,27.85,11.0,0.9706,0.9703
+E4,convnext_tiny,"224px, norm. ImageNet, SIN aumentos",False,11,7,27.85,6.6,0.9679,0.9676
+E2,resnet50,"224px, norm. ImageNet, con aumentos",False,10,8,23.58,8.6,0.9607,0.9605
+E5,convnext_tiny,"224px, norm. ImageNet, con aumentos, backbone congelado",True,8,6,0.03,6.3,0.9599,0.9596
+E1,cnn_desde_cero,"224px, norm. ImageNet, con aumentos",False,25,23,1.88,21.0,0.6967,0.6905
